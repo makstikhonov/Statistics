@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AllCountriesDataForCharts" representedClassName=".AllCountriesDataForCharts" syncable="YES">
+        <attribute name="chartData" optional="YES" attributeType="Transformable" valueTransformerName="AllCountriesDataForChartsClassValueTransformer" customClassName=".[StatisticsAllCountriesForChart]"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="date"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="AllCoutriesGlobalData" representedClassName=".AllCoutriesGlobalData" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="globalData" optional="YES" attributeType="Transformable" valueTransformerName="AllCountriesGlobalDataClassValueTransformer" customClassName=".StatisticAllCountries"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="date"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <elements>
+        <element name="AllCoutriesGlobalData" positionX="-63" positionY="-18" width="128" height="59"/>
+        <element name="AllCountriesDataForCharts" positionX="-54" positionY="-9" width="128" height="59"/>
+    </elements>
+</model>
